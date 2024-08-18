@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-.main-container {}
+.main-container {
+    
+}
 
 .navbar {
     position: fixed;
@@ -22,6 +24,8 @@
 .global-nav {}
 
 .nav {
+    max-width: 1200px;
+    min-width: 1200px;
     position: relative;
     margin: 0 auto;
     height: 80px;
@@ -47,8 +51,10 @@
 .right {
     display: flex;
     flex: 1;
+    min-width: 0;
     flex-direction: row-reverse;
     align-items: center;
+    height: 100%;
 }
 
 .items {
@@ -59,4 +65,25 @@
 
 .items li{
     display: inline-block;
+    position: relative;
+}
+
+.nav-item{
+    /* position: relative;
+    height: 80px;
+    cursor: pointer; */
+}
+
+
+.content-section{
+    max-width: 1200px;
+}
+
+.restaurant-list{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-bottom: 85px;
+    justify-content: space-between;
+    padding-top: 39px;
+    margin-top: 55px;
 }
