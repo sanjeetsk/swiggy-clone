@@ -55,42 +55,130 @@
     transform: scale(1.1);
 }
 
-.right {
+.left .location-div{
     display: flex;
-    flex: 1;
-    min-width: 0;
-    flex-direction: row-reverse;
     align-items: center;
-    height: 100%;
+    margin-left: 30px;
+    max-width: 300px;
+    padding-right: 11px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
-.items {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
+.left .location-div .other{
+    border-bottom: 2px solid #3d4152;
+    font-weight: 700;
+    padding-bottom: 2px;
+    color: #3d4152;
 }
 
-.items li{
-    display: inline-block;
+.left .location-div .other:hover{
+    color: #fc8019;
+    border-bottom: 2px solid #fc8019;
+}
+
+.left .location-div .location{
+    font-weight: 300;
+    margin-left: 5px;
+    padding-left: 5px;
+    color: #686b78;
+}
+
+.left .location-div .arrow-down{
+    margin-left: 5px;
+    color: #fc8019;
+}
+
+.right {
     position: relative;
 }
 
-.nav-item{
-    /* position: relative;
+.right .items{
+    display: flex;
+}
+
+.right .items li{
+    list-style-type: none;
+    font-weight: 500px;
+    font-size: 16px;
+    color: #3d4152;
+    margin-right: 36px;
+}
+
+.right .items .nav-item{
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
     height: 80px;
-    cursor: pointer; */
+    cursor: pointer;
+}
+
+.right .items .nav-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3d4152;
+    font-size: 16px;
+}
+
+.right .items li:last-child a svg{
+    fill: #60b246;
+}
+
+.nav-item span{
+    padding-left: 11px;
 }
 
 
-.content-section{
+/* main section */
+
+.container{
     max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 42px;
+    position: relative;
+    top: 80px;
+    left: 10px;
+    background: #fff;
 }
+
+.item-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.item-bar .number{
+    font-size: 28px;
+    font-weight: 700;
+    color: #3d4152;
+}
+
+.item-bar .filters{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #686b78;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.item-bar .filters div{
+    margin-left: 35px;
+}
+
 
 .restaurant-list{
     display: grid;
     grid-template-columns: repeat(4, 25%);
     margin-bottom: 85px;
     justify-content: space-between;
-    padding-top: 39px;
     margin-top: 55px;
+}
+
+.place-link img{
+    width: 260px;
 }
