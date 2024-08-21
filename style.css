@@ -133,7 +133,7 @@
 
 /* main section */
 
-.container{
+.content-section{
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 42px;
@@ -175,10 +175,205 @@
     display: grid;
     grid-template-columns: repeat(4, 25%);
     margin-bottom: 85px;
-    justify-content: space-between;
     margin-top: 55px;
 }
 
-.place-link img{
-    width: 260px;
+.restaurant-list .place-link{
+    text-decoration: none;
+    background-color: #fff;
+    color: inherit;
+}
+
+.restaurant-list .list-item{
+    padding: 25px;
+}
+
+.restaurant-list .list-item:hover{
+    border: 1px solid #d3d5df;
+    box-shadow: 0px 4px 7px 0px rgba(218 220 230 / 60%);
+}
+
+.item-content .top-img{
+    background: #eef0f5;
+    width: 254px;
+    height: 160px;
+}
+
+.item-content .top-img img{
+    width: 254px;
+    height: 160px;
+    opacity: 0.8;
+}
+
+.item-content{
+    position: relative;
+}
+
+.item-content .status{
+    position: absolute;
+    top: 0;
+    background-color: rgb(58, 60, 65);
+    left: -8px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 9px 4px;
+    text-transform: uppercase;
+    border-color: rgb(30, 32, 35) transparent;
+}
+
+.status::before{
+    position: absolute;
+    bottom: -9px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: inherit;
+    left: 0;
+    border-width: 9px 0 0 9px;
+}
+
+.place-name{
+    margin-top: 14px;
+}
+
+.place-name .name{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.place-name .food-items{
+    color: #686b78;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+.info-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #535665;
+}
+
+.info-div .rating{
+    background-color: #db7c38;
+    color: #fff;
+    padding: 0 5px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating .icon-star{
+    font-size: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: -1;
+}
+
+.offer-div{
+    border-top: 1px solid #e9e9eb;
+    padding-top: 14px;
+    margin-top: 14px;
+    color: #8a584b;
+    display: flex;
+    align-items: center;
+}
+
+.offer-div .icon-offer-filled{
+    font-size: 16px;
+    width: 20px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.offer-div .offer-text{
+    font-weight: 400;
+    font-size: 14px;
+    color: #8a584b;
+    line-height: 1.2;
+}
+
+.place:hover .quick-view{
+    visibility: visible;
+}
+
+.place .quick-view{
+    visibility: hidden;
+    font-size: 13px;
+    border-top: 1px solid #e9e9eb;
+    padding-top: 14px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.quick-view .view-btn{
+    color: #5d8ed5;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #000;
+    margin-top: 120px;
+}
+
+.footer-content{
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    color: #e9e9eba8;
+    padding-top: 50px;
+}
+
+.footer-content .points{
+    padding: 0 50px;
+}
+
+.footer-content li{
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.footer-content li:first-child{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-content .points:last-child .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #e9e9eb;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.points:last-child .btn:hover{
+    border: 1px solid green;
+}
+
+.points .btn .fa-brands{
+    font-size: 28px;
+}
+
+.points .btn .text1{
+    font-size: 8px;
+    font-weight: 200;
 }
